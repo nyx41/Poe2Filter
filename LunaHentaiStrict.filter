@@ -5,11 +5,13 @@
 #==========================================
 
 
-
-
 #--------------------------
 # Overrides - Uniques, Valuables
 #--------------------------
+
+# Uniques
+Hide
+BaseType "Wooden Club" "Engraved Focus" "Iron Greaves" "Makeshift Crossbow" "Fire Quiver" "Cultist Crown" "Voltaic Staff" "Recurve Bow" "Omen Sceptre" "Broadhead Quiver" "Slim Mace" "Wrapped Quarterstaff"
 
 Show
 Rarity Unique
@@ -166,7 +168,7 @@ SetFontSize 42
 SetTextColor 255 255 255 255
 SetBorderColor 255 255 255 255
 SetBackgroundColor 162 155 254 255
-CustomAlertSound "ara-ara.wav" 300
+CustomAlertSound "aah.mp3" 300
 PlayEffect Red
 MinimapIcon 0 Red Circle
 
@@ -184,15 +186,18 @@ PlayEffect Yellow
 MinimapIcon 1 Yellow Circle
 SetFontSize 42
 
-Show
+Hide 
+BaseType "Blacksmith's Whetstone" "Armourer's Scrap" 
+
+Hide
 Class "Currency"
-BaseType "Arcanist's Etcher" "Blacksmith's Whetstone" "Artificer's Orb" "Armourer's Scrap" 
-SetTextColor 255 255 255 120
-SetBorderColor 50 50 50 255
-SetBackgroundColor 50 50 50 255
-PlayEffect White
-MinimapIcon 2 Grey Circle
-SetFontSize 26
+BaseType "Arcanist's Etcher" "Artificer's Orb" 
+#SetTextColor 255 255 255 120
+#SetBorderColor 50 50 50 255
+#SetBackgroundColor 50 50 50 255
+#PlayEffect White
+#MinimapIcon 2 Grey Circle
+#SetFontSize 26
 
 Show
 Class "Currency"
@@ -204,35 +209,19 @@ PlayEffect White
 MinimapIcon 2 Grey Circle
 #SetFontSize 42
 
-Show
-Class "Currency"
-BaseType "Orb of Alchemy" 
-SetTextColor 255 255 255 120
-SetBorderColor 234 181 67 255
-SetBackgroundColor 50 50 50 255
-PlayEffect White
-MinimapIcon 2 Grey Circle
+#Show
+#Class "Currency"
+#BaseType "Regal Orb"
+#SetTextColor 255 255 255 120
+#SetBorderColor 27 156 252 255
+#SetBackgroundColor 50 50 50 255
+#PlayEffect White
+#MinimapIcon 2 Grey Circle
 #SetFontSize 42
 
-Show
+Hide
 Class "Currency"
-BaseType "Regal Orb"
-SetTextColor 255 255 255 120
-SetBorderColor 27 156 252 255
-SetBackgroundColor 50 50 50 255
-PlayEffect White
-MinimapIcon 2 Grey Circle
-#SetFontSize 42
-
-Show
-Class "Currency"
-BaseType "Vaal Orb"
-SetTextColor 255 255 255 120
-SetBorderColor 109 33 79 255
-SetBackgroundColor 50 50 50 255
-PlayEffect White
-MinimapIcon 2 Grey Circle
-#SetFontSize 42
+BaseType "Vaal Orb" "Regal Orb" "Orb of Alchemy" 
 
 Show
 Class "Currency"
@@ -246,10 +235,10 @@ MinimapIcon 1 Blue Circle
 
 Show
 BaseType "Gold Key" "Silver Key" "Bronze Key"
-SetTextColor 255 207 132
-SetBorderColor 255 207 132
-SetBackgroundColor 76 51 12
-CustomAlertSound "DeepSound.mp3" 300
+SetTextColor 255 255 255
+SetBorderColor 255 255 255
+SetBackgroundColor 255 190 118
+CustomAlertSound "uwu.mp3" 300
 PlayEffect White
 MinimapIcon 2 White Circle
 SetFontSize 40
@@ -330,20 +319,20 @@ SetFontSize 38
 SetTextColor 0 0 0 255
 SetBackgroundColor 235 235 235 255
 SetBorderColor 255 107 107
-CustomAlertSound "ahh.wav" 300
+CustomAlertSound "nya.mp3" 300
 PlayEffect Yellow
 MinimapIcon 1 Red Square
 
-Show
+Hide
 WaystoneTier == 14
 Class == "Waystones"
-SetFontSize 36
-SetTextColor 0 0 0 255
-SetBackgroundColor 200 200 200 200
-SetBorderColor 0 0 0 255
-CustomAlertSound "BexBloopers_7chancing.mp3" 200
-PlayEffect Yellow
-MinimapIcon 1 Red Square
+#SetFontSize 36
+#SetTextColor 0 0 0 255
+#SetBackgroundColor 200 200 200 200
+#SetBorderColor 0 0 0 255
+#CustomAlertSound "BexBloopers_7chancing.mp3" 200
+#PlayEffect Yellow
+#MinimapIcon 1 Red Square
 
 #Show
 #WaystoneTier <= 13
@@ -374,6 +363,18 @@ MinimapIcon 1 Yellow Diamond
 
 Show
 BaseType == "Stellar Amulet" "Heavy Belt"
+Rarity Normal
+SetFontSize 42
+SetTextColor 255 255 255 255
+SetBorderColor 255 255 255 255
+SetBackgroundColor 94 185 180 255
+PlayEffect Cyan
+MinimapIcon 0 Cyan Moon
+CustomAlertSound "tuturu_1.mp3" 300
+
+Show
+BaseType "Attuned Wand" "Siphoning Wand" 
+ItemLevel >= 80
 Rarity Normal
 SetFontSize 42
 SetTextColor 255 255 255 255
